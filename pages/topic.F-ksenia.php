@@ -1,112 +1,109 @@
 <?php include '../config.php'; ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="http://youtube.local/assets/dcode.css">
-    <title>LocalStorage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/mainstyle.css">
+  <link href="../libs/prism" rel="stylesheet" />
+
+  <script src="../libs/prism"></script>
+  <script src="../topic.F-ksenia.js"></script>
 </head>
 
-    <body>
-        <h1>Local Storage!</h1>
-        
-            <div class="left">
-                <p>A hard drive or solid state drive. </p>
-                <p></p>
-                
-                <img src="/images/localStorage.png" alt="screenshot of localStorage application"/>
-            </div>
-            <div class="right" >
-                <p>To store local data, today’s browsers support a local storage and a session storage. 
-                    The difference session storage is only available per tab,
-                    stored data is deleted once you close the tab with the application. 
-                    The local storage data will be there as long until you delete it.
-                </p>
-            </div>
-        
+<body>
 
-        <hr>
-        <h2>LocalStorage has four methods</h2>
-        <ol>
-            <li>localStorage.setItem("data",data)</li>
-            <li>localStorage.getItem("data")</li>
-            <li>localStorage.removeItem("data")</li>
-            <li>localStorage.remove()</li>
-        </ol>
+    <h1>Do... while</h1>
 
-      
-        <h2><strong>FEW EXAMPLES:</strong></h2>
-<!---------KEY FELD........................................-->          
-                <h2>Example from Webplatform</h2></a>
+    <img src="/images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
 
-        <section>
-            <label for="key">Key:</label>
-            <input type="text" id="key" value="" placeholder="key">
-            <br>
-            <label for="value">Value:</label>
-            <input type="text" id="value" value="" placeholder="value">
-            <br>
-            <button type="button" id="set-local">Save to localStorage</button>
-        </section>
-        <hr>
-        <section>
-            <label for="get-key">Key:</label>
-            <input type="text" id="get-key" value="" placeholder="get key">
-            <button type="button" id="get-local">Get from localStorage</button>
-            <output id="output"></output>
-        </section>
-        <hr>
-        <section>
-            <button type="button" id="clear">Clear localStorage</button>
-        </section>
+    <p>
+        The do...while statement creates a loop that executes 
+        a specified statement until the test condition evaluates to false. 
+        The condition is evaluated after executing the statement, 
+        resulting in the specified statement executing at least once.
+    </p>
 
-<!-------COMMENT FELD.............................-------->                                              
-            >
-                <h2>Example from CareerKarma</h2></a>
-            <div>         	
-                <h3>Customer Feedback</h3>         
-                    <p>We'd love to learn more!</p>         	
-                    <form>             
-                        <label for="name">Name: </label>             	
-                        <input id="name" type="text" /><br /><br />              	
-                        <label for="email">Email: </label>             
-                        <input id="email" type="email" /><br /><br />              	
-                        <label for="feedback">Message: </label><br /><br />       
-                        <textarea id="feedback"></textarea><br /><br />     
-                        <button id="saveButton">Save form</button>             
-                        <button id="retrieveButton">Retrieve form</button> 
-                        <button id="clear">Clear</button>    
-                    </form>
-            </div>    
-            <hr>
-<!---------MY TRY........................................-->              
-    <h2>my try</h2>
-    <div>
-        <textarea id="textMe" placeholder="try me..."></textarea><br>
-  <!--  <button onclick="Data()" id="showMe">Show</button>-->
-            <button onclick="data(0)" id="saveMe">Save</button><br>
-            <button onclick="data(1)" id="resetMe">Clear Input Field</button><br>
-            <button onclick="data(2)" id="getMe">Get</button><br>
-            <button onclick="data(3)" id="clearMe">Clear LocalStorage</button><br>
-            <textarea id="outputMe" placeholder="output"></textarea><br>
-    </div>
+    <h3>Syntax</h3>
+    <pre class="language-css">
+      <code class="language-css">
 
-    <!-- RELATED MATERIAL ---------------------------------------------------->
+    &lt;script>
+    do
+      statement
+    while (condition);
+    &lt;/script>
+          </code>
+        </pre>
+
+    <!-- EXAMPLE 1 ----------------------------------------------------------->
+    <h3>In the following example, the do...while loop iterates at least once and 
+      reiterates until i is no longer less than 5</h3>
+
+    <pre class="language-css">
+      <code class="language-css">
+    &lt;script>
+    var result = '';
+    var i = 0;
+    do {
+      i += 1;
+      result += i + ' ';
+    }
+    while (i > 0 && i < 5);
+    // Despite i == 0 this will still loop as it starts off without the test
+
+    console.log(result);
+
+    &lt;/script>
+          </code>
+        </pre>
+
+  <div>
+    <button onclick="topicT1();">Run</button>
+    <button onclick="clearResultText(1);">Clear</button>
+    <p id="result-text-1" class="result-text">&nbsp;</p>
+  </div>
+
+  <!-- EXAMPLE 2 ----------------------------------------------------------->
+  <h3>Display Numbers from 1 to 5</h3>
+
+  <pre class="language-css">
+    <code class="language-css">
+  &lt;script>
+  // program to display numbers
+  let i = 1;
+  const n = 5;
+
+  // do...while loop from 1 to 5
+  do {
+      console.log(i);
+      i++;
+  } while(i <= n);
+
+  &lt;/script>
+      </code>
+    </pre>
+
+<div>
+  <button onclick="topicT2();">Run</button>
+  <button onclick="clearResultText(2);">Clear</button>
+  <p id="result-text-2" class="result-text">&nbsp;</p>
+</div>
+
+  <!-- RELATED MATERIAL ---------------------------------------------------->
   <h3>Related Topics</h3>
-  <p>Web Storage, Session Storage, Cookies</p>
+  <p>Loops, While Loop, Infinite while Loop, For Loop</p>
 
   <h3>More Examples</h3>
-  <a href="#">Hamza</a><br>
   <a href="#">...</a><br>
+  <a href="#">.../a><br>
 
   <h3>More Info</h3>
-  <a href="https://webplatform.github.io/docs/apis/web-storage/Storage/localStorage/">Webplatform Source</a><br>
-  <a href="https://careerkarma.com/blog/javascript-localstorage/">CareerKarma Source</a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while#using_do...while">Statement - Do...While</a><br>
+  <a href="https://www.programiz.com/javascript/while-loop">JavaScript while and do...while Loop</a>
 
-    <script src="js/localStorage.js"></script>
-    </body>
-    
-    
+</body>
+
 </html>

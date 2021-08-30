@@ -1,7 +1,4 @@
-// Template Strings -----------------------------------------------------------------
-
-
-
+//  DO....WHILE FUNCTIONS ----------------------------------------------------
 //  Example 1:
 // program to display numbers
 function topicT1() {
@@ -19,8 +16,8 @@ function topicT1() {
     setInnerHTML("#result-text-1", result);
 }
     
-    //Example 2:
-    // program to display numbers
+//Example 2:
+// program to display numbers
 function topicT2() {
     let i = 1;
     const n = 5;
@@ -34,7 +31,7 @@ function topicT2() {
     setInnerHTML("#result-text-2", );
 }
     
-// HELPER FUNCTIONS ----------------------------------------------------------------
+// HELPER FUNCTIONS -------------------------------------------------------------
 
 function setInnerHTML(selector, text) {
     let elem = document.body.querySelector(selector);
