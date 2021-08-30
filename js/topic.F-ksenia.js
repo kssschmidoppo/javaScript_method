@@ -28,7 +28,7 @@ function topicT2() {
         i++;
     } while(i <= n);
     
-    setInnerHTML("#result-text-2", );
+    setInnerHTML("#result-text-2", i);
 }
     
 // HELPER FUNCTIONS -------------------------------------------------------------

@@ -1,14 +1,8 @@
-<?php include '../config.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mainstyle.css">
-    <title>LocalStorage</title>
-</head>
-<body>
+<?php
+require_once '../config.php';
+require_once 'header.inc.php';
+?>
+<main>
     <h1>Local Storage!</h1>
         <div class="left">
             <p>A hard drive or solid state drive. </p>
@@ -40,18 +34,18 @@
         <label for="value">Value:</label>
         <input type="text" id="value" value="" placeholder="value">
         <br>
-        <button type="button" id="set-local">Save to localStorage</button>
+        <button class="btn" type="button" id="set-local">Save to localStorage</button>
     </section>
     <hr>
     <section>
         <label for="get-key">Key:</label>
         <input type="text" id="get-key" value="" placeholder="get key">
-        <button type="button" id="get-local">Get from localStorage</button>
+        <button class="btn" type="button" id="get-local">Get from localStorage</button>
         <output id="output"></output>
     </section>
     <hr>
     <section>
-        <button type="button" id="clear">Clear localStorage</button>
+        <button class="btn" type="button" id="clear">Clear localStorage</button>
     </section>
 <!-------COMMENT FELD.............................-------->                                              
     <h2>Example from CareerKarma</h2></a>
@@ -65,9 +59,9 @@
             <input id="email" type="email" /><br /><br />              	
             <label for="feedback">Message: </label><br /><br />       
             <textarea id="feedback"></textarea><br /><br />     
-            <button id="saveButton">Save form</button>             
-            <button id="retrieveButton">Retrieve form</button> 
-            <button id="clear">Clear</button>    
+            <button class="btn" id="saveButton">Save form</button>             
+            <button class="btn" id="retrieveButton">Retrieve form</button> 
+            <button class="btn" id="clear">Clear</button>    
         </form>
     </div>    
     <hr>
@@ -75,10 +69,10 @@
     <h2>my try</h2>
     <div>
         <textarea id="textMe" placeholder="try me..."></textarea><br>
-            <button onclick="data(0)" id="saveMe">Save</button><br>
-            <button onclick="data(1)" id="resetMe">Clear Input Field</button><br>
-            <button onclick="data(2)" id="getMe">Get</button><br>
-            <button onclick="data(3)" id="clearMe">Clear LocalStorage</button><br>
+            <button class="btn" onclick="data(0)" id="saveMe">Save</button><br>
+            <button class="btn" onclick="data(1)" id="resetMe">Clear Input Field</button><br>
+            <button class="btn" onclick="data(2)" id="getMe">Get</button><br>
+            <button class="btn" onclick="data(3)" id="clearMe">Clear LocalStorage</button><br>
         <textarea id="outputMe" placeholder="output"></textarea><br>
     </div>
 
@@ -94,8 +88,9 @@
   <a href="https://webplatform.github.io/docs/apis/web-storage/Storage/localStorage/">Webplatform Source</a><br>
   <a href="https://careerkarma.com/blog/javascript-localstorage/">CareerKarma Source</a>
 
-    <script src="js/topic.F-ksenia.js"></script>
-    </body>
+  <script src="/projects/js_nutshell/js/topic.T-ksenia.js"></script>
+  
+  <?php include $_SERVER['HOME'] . '/projects/js_nutshell/inc/footer.inc.php'; ?>
+
+</main>
     
-    
-</html>

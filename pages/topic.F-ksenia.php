@@ -1,23 +1,11 @@
-<?php include '../config.php'; ?>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="../css/mainstyle.css">
-  <link href="../libs/prism" rel="stylesheet" />
-
-  <script src="../libs/prism"></script>
-  <script src="../topic.F-ksenia.js"></script>
-</head>
-
-<body>
-
+<?php
+require_once '../config.php';
+require_once 'header.inc.php';
+?>
+<main>
     <h1>Do... while</h1>
 
-    <img src="/images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
+    <img src="../images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
 
     <p>
         The do...while statement creates a loop that executes 
@@ -61,8 +49,8 @@
         </pre>
 
   <div>
-    <button onclick="topicT1();">Run</button>
-    <button onclick="clearResultText(1);">Clear</button>
+    <button class="btn" onclick="topicT1();">Run</button>
+    <button class="btn" onclick="clearResultText(1);">Clear</button>
     <p id="result-text-1" class="result-text">&nbsp;</p>
   </div>
 
@@ -87,8 +75,8 @@
     </pre>
 
 <div>
-  <button onclick="topicT2();">Run</button>
-  <button onclick="clearResultText(2);">Clear</button>
+  <button class="btn" onclick="topicT2();">Run</button>
+  <button class="btn" onclick="clearResultText(2);">Clear</button>
   <p id="result-text-2" class="result-text">&nbsp;</p>
 </div>
 
@@ -98,12 +86,15 @@
 
   <h3>More Examples</h3>
   <a href="#">...</a><br>
-  <a href="#">.../a><br>
+  <a href="#">...</a><br>
 
   <h3>More Info</h3>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while#using_do...while">Statement - Do...While</a><br>
   <a href="https://www.programiz.com/javascript/while-loop">JavaScript while and do...while Loop</a>
 
-</body>
+  <script src="/projects/js_nutshell/js/topic.F-ksenia.js"></script>
+  
+  <?php include $_SERVER['HOME'] . '/projects/js_nutshell/inc/footer.inc.php'; ?>
 
-</html>
+</main>
+
