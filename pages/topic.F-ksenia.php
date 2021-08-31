@@ -3,8 +3,9 @@ require_once '../config.php';
 require_once 'header.inc.php';
 ?>
 <main>
+  <div class="w-75 mx-auto">  
     <h1>Do... while</h1>
-
+    
     <img src="../images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
 
     <p>
@@ -13,52 +14,51 @@ require_once 'header.inc.php';
         The condition is evaluated after executing the statement, 
         resulting in the specified statement executing at least once.
     </p>
-
+    <div class="codeArea flex-container mw-100 codeExample">
     <h3>Syntax</h3>
+    <div class="row">
     <pre class="language-css">
-      <code class="language-css">
-
-    &lt;script>
-    do
-      statement
-    while (condition);
-    &lt;/script>
+      <code class="language-js">
+            &lt;script>
+            do
+              statement
+            while (condition);
+            &lt;/script>
           </code>
         </pre>
 
     <!-- EXAMPLE 1 ----------------------------------------------------------->
     <h3>In the following example, the do...while loop iterates at least once and 
       reiterates until i is no longer less than 5</h3>
+        <pre class="language-css">
+          <code class="language-js">
+            &lt;script>
+            var result = '';
+            var i = 0;
+            do {
+              i += 1;
+              result += i + ' ';
+            }
+            while (i > 0 && i < 5);
+            // Despite i == 0 this will still loop as it starts off without the test
 
-    <pre class="language-css">
-      <code class="language-css">
-    &lt;script>
-    var result = '';
-    var i = 0;
-    do {
-      i += 1;
-      result += i + ' ';
-    }
-    while (i > 0 && i < 5);
-    // Despite i == 0 this will still loop as it starts off without the test
+            console.log(result);
 
-    console.log(result);
-
-    &lt;/script>
+            &lt;/script>
           </code>
         </pre>
 
-  <div>
-    <button class="btn" onclick="topicT1();">Run</button>
-    <button class="btn" onclick="clearResultText(1);">Clear</button>
-    <p id="result-text-1" class="result-text">&nbsp;</p>
-  </div>
+        <div>
+          <button class="btn" onclick="topicT1();">Run</button>
+          <button class="btn" onclick="clearResultText(1);">Clear</button>
+          <p id="result-text-1" class="result-text">&nbsp;</p>
+        </div>
 
   <!-- EXAMPLE 2 ----------------------------------------------------------->
   <h3>Display Numbers from 1 to 5</h3>
 
   <pre class="language-css">
-    <code class="language-css">
+    <code class="language-js">
   &lt;script>
   // program to display numbers
   let i = 1;
@@ -93,8 +93,9 @@ require_once 'header.inc.php';
   <a href="https://www.programiz.com/javascript/while-loop">JavaScript while and do...while Loop</a>
 
   <script src="/projects/js_nutshell/js/topic.F-ksenia.js"></script>
-  
-  <?php include $_SERVER['HOME'] . '/projects/js_nutshell/inc/footer.inc.php'; ?>
+  </div>
+  <?php include 'footer.inc.php'; ?>
 
 </main>
-
+</div><!--row-->
+</div><!--codeArea-->
