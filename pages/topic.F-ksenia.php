@@ -23,12 +23,12 @@
       <img src="../images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
       <br>
       <br>
-      <div class="codeArea flex-container mw-100 codeExample">
         <h3>Syntax</h3>
         <br>
         <p>
             Here we can see where is "the statment" and where is "the conditions"
         </p>
+        <div class="codeArea flex-container mw-100 codeExample">
         <div class="row">
           <pre class="language-css">
             <code class="language-js">
