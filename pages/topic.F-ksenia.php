@@ -11,7 +11,7 @@
 <main>
   <body>
     <div class="w-75 mx-auto">  
-      <h1><strong>Do... while</strong</h1>
+      <h1><strong>Do... while</strong></h1>
       <br>
       <img src="../images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
       <br>
