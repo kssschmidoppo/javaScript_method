@@ -37,33 +37,35 @@ document.getElementById('get-local').addEventListener('click', valueGetHandler);
 document.getElementById('clear').addEventListener('click', clearStorageHandler);
 
 
-        ///----CAREER KARMA CODE---------------------------------------////
-        //----declaring variebles------//
-        var nameField = document.getElementById("name");
-        var emailField = document.getElementById("email");
-        var feedbackField = document.getElementById("feedback");
+        
 
-        var saveButton = document.getElementById("saveButton");
-        var retrieveButton = document.getElementById("retrieveButton");
-        var clearButton = document.getElementById("clearAll");
+///----CAREER KARMA CODE---------------------------------------////
+//----declaring variebles------//
+var nameField = document.getElementById("name"); 
+var emailField = document.getElementById("email"); 
+var feedbackField = document.getElementById("feedback");
 
-        ////-----making buttons react onclick----///
-        function  saveResponses () {
-            localStorage.setItem("name", nameField.value);
-            localStorage.setItem("email", emailField.value);
-            localStorage.setItem("feedback", feedbackField.value);
-        }
-        saveButton.addEventListener("click", saveResponses);
+var saveButton = document.getElementById("saveButton"); 
+var retrieveButton = document.getElementById("retrieveButton");
+var clearButton = document.getElementById("clear");
 
-        function  retrieveResponses () {
-            nameField.value = localStorage.getItem("name");
-            emailField.value = localStorage.getItem("email");
-            feedbackField.value = localStorage.getItem("feedback");
-        }
+////-----making buttons react onclick----///
+function  saveResponses () { 	
+    localStorage.setItem("name", nameField.value); 	
+    localStorage.setItem("email", emailField.value);    	
+    localStorage.setItem("feedback", feedbackField.value); 
+}
+saveButton.addEventListener("click", saveResponses);
 
-        retrieveButton.addEventListener("click", function(e)
-                { e.preventDefault();retrieveResponses();clear();
-        });
+function  retrieveResponses () { 	
+    nameField.value = localStorage.getItem("name");    	
+    emailField.value = localStorage.getItem("email");     	
+    feedbackField.value = localStorage.getItem("feedback");
+}  
+
+retrieveButton.addEventListener("click", function(e) 
+        { e.preventDefault();retrieveResponses();clear();
+});
 
             ///-----MY TRY-----------------------------////
 
