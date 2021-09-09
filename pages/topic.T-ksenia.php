@@ -1,6 +1,7 @@
 <?php 
   require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/config.php';
   require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/header.inc.php';
+  
   $rel_links = [
     'topic.A.name.php',
     'topic.A.name.php'
