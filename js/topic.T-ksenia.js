@@ -19,21 +19,14 @@ var valueSetHandler = function() {
     /** save value under key in localStorage */
     window.localStorage.setItem(key, value);
 },
-   // valueGetHandler = function() {
-    /** read the value from the form */
-   // var key = document.getElementById('get-key').value,
-    /** read the value from the localStorage */
-   // value = window.localStorage.getItem(key);
-    /** write the value in output */
-   // document.getElementById('output').innerText = value;
-//},
+   
     clearStorageHandler = function() {
     window.localStorage.clear();
 };
 
 /** register event Listeners for button clicks */
 document.getElementById('set-local').addEventListener('click', valueSetHandler);
-    //document.getElementById('get-local').addEventListener('click', valueGetHandler);
+    
 document.getElementById('clearAll').addEventListener('click', clearStorageHandler);
 
 
