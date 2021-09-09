@@ -7,9 +7,9 @@ if (window.localStorage) { // checks if browser support localStorage
     }
     localStorage['testKey'] = 'Hi again!'; // stores value in localstorage
 } else {
-console.log('your browser dont support localstorage');// in our case it does support and 
+console.log('your browser dont support localstorage');// in our case it does support and
                                                 //to find it do to inspector => Application
-}       
+}
 
 /* global document, window */
 var valueSetHandler = function() {
@@ -19,14 +19,14 @@ var valueSetHandler = function() {
     /** save value under key in localStorage */
     window.localStorage.setItem(key, value);
 },
-    valueGetHandler = function() {
+   // valueGetHandler = function() {
     /** read the value from the form */
-    var key = document.getElementById('get-key').value,
+   // var key = document.getElementById('get-key').value,
     /** read the value from the localStorage */
-    value = window.localStorage.getItem(key);
+   // value = window.localStorage.getItem(key);
     /** write the value in output */
-    document.getElementById('output').innerText = value;
-},
+   // document.getElementById('output').innerText = value;
+//},
     clearStorageHandler = function() {
     window.localStorage.clear();
 };
@@ -39,29 +39,29 @@ document.getElementById('clear').addEventListener('click', clearStorageHandler);
 
         ///----CAREER KARMA CODE---------------------------------------////
         //----declaring variebles------//
-        var nameField = document.getElementById("name"); 
-        var emailField = document.getElementById("email"); 
+        var nameField = document.getElementById("name");
+        var emailField = document.getElementById("email");
         var feedbackField = document.getElementById("feedback");
 
-        var saveButton = document.getElementById("saveButton"); 
+        var saveButton = document.getElementById("saveButton");
         var retrieveButton = document.getElementById("retrieveButton");
         var clearButton = document.getElementById("clearAll");
 
         ////-----making buttons react onclick----///
-        function  saveResponses () { 	
-            localStorage.setItem("name", nameField.value); 	
-            localStorage.setItem("email", emailField.value);    	
-            localStorage.setItem("feedback", feedbackField.value); 
+        function  saveResponses () {
+            localStorage.setItem("name", nameField.value);
+            localStorage.setItem("email", emailField.value);
+            localStorage.setItem("feedback", feedbackField.value);
         }
         saveButton.addEventListener("click", saveResponses);
 
-        function  retrieveResponses () { 	
-            nameField.value = localStorage.getItem("name");    	
-            emailField.value = localStorage.getItem("email");     	
+        function  retrieveResponses () {
+            nameField.value = localStorage.getItem("name");
+            emailField.value = localStorage.getItem("email");
             feedbackField.value = localStorage.getItem("feedback");
-        }  
+        }
 
-        retrieveButton.addEventListener("click", function(e) 
+        retrieveButton.addEventListener("click", function(e)
                 { e.preventDefault();retrieveResponses();clear();
         });
 
@@ -83,7 +83,7 @@ document.getElementById('clear').addEventListener('click', clearStorageHandler);
                     input.value = "";
                     document.getElementById('outputMe').innerHTML = "CAN TYPE AGAIN";
                     break;
-                    
+
 
                 case 2:/// gets data from localStorage and displays at typing area
                     var lastText = localStorage.getItem("text");
@@ -91,20 +91,20 @@ document.getElementById('clear').addEventListener('click', clearStorageHandler);
                     document.getElementById('textMe').value = lastText;
                     document.getElementById('outputMe').innerHTML = "LOOK I REMEMBER YOU";
                     break;
-                    
 
-                case 3:///  clears all data from localStorage 
+
+                case 3:///  clears all data from localStorage
                     input = document.getElementById("textMe");
                     input.value = "";
                     localStorage.clear();
-                    document.getElementById('outputMe').innerHTML = "NOW IT IS EMTY"; 
+                    document.getElementById('outputMe').innerHTML = "NOW IT IS EMTY";
                     break;
 
                 default:
-                        
+
                     break;
             }
 
             }
-                
+
 
