@@ -50,7 +50,7 @@
                     <output id="output"></output>
                 </form> 
             -->
-                    <button class="btn" type="button" id="clear">Clear localStorage</button>
+                    <button class="btn" type="button" id="clearAll">Clear localStorage</button>
                 </form>
                 <br>
                 <hr>
@@ -67,7 +67,7 @@
                     <textarea id="feedback"></textarea><br /><br />     
                     <button class="btn" id="saveButton">Save form</button>             
                     <button class="btn" id="retrieveButton">Retrieve form</button> 
-                    <button class="btn" id="clearAll">Clear</button>    
+                    <button class="btn" id="clear">Clear</button>    
                 </form>   
                 <br>
                 <hr> 
