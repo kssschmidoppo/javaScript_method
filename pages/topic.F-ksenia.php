@@ -13,8 +13,6 @@
     <div class="w-75 mx-auto">  
       <h1><strong>Do... while</strong></h1>
       <br>
-      <img src="../images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
-      <br>
       <p>
         The do...while statement creates a loop that executes 
         a specified statement until the test condition evaluates to false. 
@@ -22,8 +20,12 @@
         resulting in the specified statement executing at least once.
       </p>
       <br>
+      <img src="../images/fchart.png" alt="Flowchart of JavaScript do...while loop"/>
+      <br>
+      <br>
       <div class="codeArea flex-container mw-100 codeExample">
         <h3>Syntax</h3>
+        <br>
         <p>
             Here we can see where is "the statment" and where is "the conditions"
         </p>
