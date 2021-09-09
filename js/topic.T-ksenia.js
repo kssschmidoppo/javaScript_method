@@ -33,7 +33,7 @@ var valueSetHandler = function() {
 
 /** register event Listeners for button clicks */
 document.getElementById('set-local').addEventListener('click', valueSetHandler);
-//document.getElementById('get-local').addEventListener('click', valueGetHandler);
+    //document.getElementById('get-local').addEventListener('click', valueGetHandler);
 document.getElementById('clearAll').addEventListener('click', clearStorageHandler);
 
 
