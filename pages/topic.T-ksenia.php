@@ -42,14 +42,7 @@
                     <input style="margin-bottom:20px;" type="text" id="value" value=""><br><br>
             
                     <button class="btn" type="button" id="set-local">Save to localStorage</button>
-            <!--- this piese doesnt work
-                <form>
-                    <label for="get-key">Key:</label>
-                    <input type="text" id="get-key" value="">
-                    <button type="button" id="get-local">Get from localStorage</button>
-                    <output id="output"></output>
-                </form> 
-            -->
+            
                     <button class="btn" type="button" id="clearAll">Clear localStorage</button>
                 </form>
                 <br>
