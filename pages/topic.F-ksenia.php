@@ -1,6 +1,6 @@
-<?php
-require_once '../config.php';
-require_once 'header.inc.php';
+<?php 
+  require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/config.php';
+  require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/header.inc.php';
 ?>
 <main>
   <body>
@@ -103,7 +103,7 @@ require_once 'header.inc.php';
       
             <script src="/projects/js_nutshell/js/topic.F-ksenia.js"></script>                
 
-            <?php include 'footer.inc.php'; ?>
+            <?php require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/footer.inc.php'; ?>
       
         </div><!--row-->
       </div><!--codeArea-->
