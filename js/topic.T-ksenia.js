@@ -45,7 +45,7 @@ document.getElementById('clear').addEventListener('click', clearStorageHandler);
 
         var saveButton = document.getElementById("saveButton"); 
         var retrieveButton = document.getElementById("retrieveButton");
-        var clearButton = document.getElementById("clear");
+        var clearButton = document.getElementById("clearAll");
 
         ////-----making buttons react onclick----///
         function  saveResponses () { 	
@@ -94,9 +94,9 @@ document.getElementById('clear').addEventListener('click', clearStorageHandler);
                     
 
                 case 3:///  clears all data from localStorage 
-                    localStorage.clear();
                     input = document.getElementById("textMe");
                     input.value = "";
+                    localStorage.clear();
                     document.getElementById('outputMe').innerHTML = "NOW IT IS EMTY"; 
                     break;
 
