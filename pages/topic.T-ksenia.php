@@ -2,10 +2,14 @@
 require_once '../config.php';
 require_once 'header.inc.php';
 ?>
-<div class="w-75 mx-auto">
-    <h1><strong>Local Storage!</strong></h1>
+<body>
+    <div class="w-75 mx-auto">
+        <h1><strong>Local Storage!</strong></h1>
             <p>A hard drive or solid state drive. </p>
+            <br>
             <img src="../images/localStorage.png" alt="screenshot of localStorage application"/>
+            <br>
+            <br>
             <p>To store local data, today’s browsers support a local storage and a session storage. 
                 The difference session storage is only available per tab,
                 stored data is deleted once you close the tab with the application. 
@@ -19,69 +23,72 @@ require_once 'header.inc.php';
                 <li>localStorage.removeItem("data")</li>
                 <li>localStorage.remove()</li>
             </ol>
-  
-            <h2><strong>FEW EXAMPLES:</strong></h2>
-        <!---------KEY FELD........................................-->          
-            <h2>Example 1: Webplatform</h2>
-            <form style="border:2px solid yellow; padding: 30px">
-                <section>
-                    <label for="key">Key:</label>
-                    <input type="text" id="key" value="" placeholder="key">
-                    <br>
-                    <label for="value">Value:</label>
-                    <input type="text" id="value" value="" placeholder="value">
-                    <br>
-                    <button class="btn" type="button" id="set-local">Save to localStorage</button>
-                </section>
-                <hr>
-                <section>
-                    <label for="get-key">Key:</label>
-                    <input type="text" id="get-key" value="" placeholder="get key">
-                    <button class="btn" type="button" id="get-local">Get from localStorage</button>
-                    <output id="output"></output>
-                </section>
+        
+    <!---------KEY FELD........................................-->          
+            <h2>Example 1:</h2>
+            <h3>Key and Value</h3> 
+            <br>
+            <form>
+                <label for="key">Key:</label><br>
+                <input style="margin-bottom:20px;" type="text" id="key" value=""><br>
+                
+                <label for="value">Value:</label><br>
+                <input style="margin-bottom:20px;" type="text" id="value" value=""><br><br>
+        
+                <button type="button" id="set-local">Save to localStorage</button>
+        <!--- this piese doesnt work
+            <form>
+                <label for="get-key">Key:</label>
+                <input type="text" id="get-key" value="">
+                <button type="button" id="get-local">Get from localStorage</button>
+                <output id="output"></output>
+            </form> 
+        -->
+                <button type="button" id="clear">Clear localStorage</button>
+            </form>
+            <br>
             <hr>
-                <section>
-                    <button class="btn" type="button" id="clear">Clear localStorage</button>
-                </section>
+    <!-------COMMENT FELD.............................-------->                                              
+            <h2> Example 2:</h2>         	
+            <h3>Customer Feedback</h3>  
+            <br>               	
+            <form >             
+                <label for="name">Name: </label>             	
+                <input id="name" type="text" /><br /><br />              	
+                <label for="email">Email: </label>             
+                <input id="email" type="email" /><br /><br />              	
+                <label for="feedback">Message: </label><br /><br />       
+                <textarea id="feedback"></textarea><br /><br />     
+                <button class="btn" id="saveButton">Save form</button>             
+                <button class="btn" id="retrieveButton">Retrieve form</button> 
+                <button class="btn" id="clearAll">Clear</button>    
             </form>   
-<!-------COMMENT FELD.............................-------->                                              
-    <h2>Example 2: CareerKarma</h2>         	
-    <h3>Customer Feedback</h3>                 	
-        <form style="border:2px solid yellow; padding: 30px">             
-            <label for="name">Name: </label>             	
-            <input id="name" type="text" /><br /><br />              	
-            <label for="email">Email: </label>             
-            <input id="email" type="email" /><br /><br />              	
-            <label for="feedback">Message: </label><br /><br />       
-            <textarea id="feedback"></textarea><br /><br />     
-            <button class="btn" id="saveButton">Save form</button>             
-            <button class="btn" id="retrieveButton">Retrieve form</button> 
-            <button class="btn" id="clear">Clear</button>    
-        </form>    
-<!---------MY TRY........................................-->              
-    <h2>my try</h2>
-    <div style="border:2px solid yellow; padding: 30px">
-        <textarea id="textMe" placeholder="try me..."></textarea><br>
-            <button class="btn" onclick="data(0)" id="saveMe">Save</button><br>
-            <button class="btn" onclick="data(1)" id="resetMe">Clear Field</button><br>
-            <button class="btn" onclick="data(2)" id="getMe">Get</button><br>
-            <button class="btn" onclick="data(3)" id="clearMe">Clear All</button><br>
-        <textarea id="outputMe" placeholder="output"></textarea><br>
-    </div>
+            <br>
+            <hr> 
+    <!---------MY TRY........................................-->              
+            <h2>Example 3: my try</h2>
+            <h3>Says what it does :)</h3>
+            <br>
+            <section>
+                <textarea rows="2" cols="30" id="textMe" style="margin-bottom:20px;" placeholder="try me..."></textarea><br>
+                    <button class="btn" onclick="data(0)" id="saveMe">Save</button>
+                    <button class="btn" onclick="data(1)" id="resetMe">Clear Field</button>
+                    <button class="btn" onclick="data(2)" id="getMe">Get</button>
+                    <button class="btn" onclick="data(3)" id="clearMe">Clear All</button><br>
+                <textarea rows="2" cols="30"id="outputMe" style="margin-top:20px" placeholder="output"></textarea><br>
+            </section>
+            <br>
+            <hr>
+            <br>
+    <!-- RELATED MATERIAL ---------------------------------------------------->
+            <h3>Related Topics</h3>
+            <p>Web Storage, Session Storage, Cookies</p>
 
-<!-- RELATED MATERIAL ---------------------------------------------------->
-  <h3>Related Topics</h3>
-  <p>Web Storage, Session Storage, Cookies</p>
-
-  <h3>More Examples</h3>
-  <a href="#">Hamza</a><br>
-  <a href="#">...</a><br>
-
-  <h3>More Info</h3>
-  <a href="https://webplatform.github.io/docs/apis/web-storage/Storage/localStorage/">Webplatform Source</a><br>
-  <a href="https://careerkarma.com/blog/javascript-localstorage/">CareerKarma Source</a>
-</div><!--cls""--->
+            <h3>More Info</h3>
+            <a href="https://webplatform.github.io/docs/apis/web-storage/Storage/localStorage/">Webplatform Source</a><br>
+            <a href="https://careerkarma.com/blog/javascript-localstorage/">CareerKarma Source</a>
+            </div><!--cls""--->
+            
   <script src="/projects/js_nutshell/js/topic.T-ksenia.js"></script>
   
   <?php include 'footer.inc.php'; ?>
