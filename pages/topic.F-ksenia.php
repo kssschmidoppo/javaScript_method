@@ -1,7 +1,13 @@
 <?php 
   require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/config.php';
   require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/header.inc.php';
+
+  $rel_links = [
+    'topic.A.name.php',
+    'topic.A.name.php'
+  ];
 ?>
+
 <main>
   <body>
     <div class="w-75 mx-auto">  
@@ -100,14 +106,14 @@
             <h3>More Info</h3>
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while#using_do...while">Statement - Do...While</a><br>
             <a href="https://www.programiz.com/javascript/while-loop">JavaScript while and do...while Loop</a>
-      
-            <script src="/projects/js_nutshell/js/topic.F-ksenia.js"></script>                
-
-            <?php require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/footer.inc.php'; ?>
-      
+           
         </div><!--row-->
       </div><!--codeArea-->
     </div><!--w-75 cls-->
+    <script src="/projects/js_nutshell/js/topic.F-ksenia.js"></script>                
+      
+    <?php require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/footer.inc.php'; ?>
+  
   </body>  
 </main>
 
