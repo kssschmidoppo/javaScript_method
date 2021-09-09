@@ -1,7 +1,7 @@
 <?php 
   require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/config.php';
   require_once $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/projects/js_nutshell/inc/header.inc.php';
-  
+
   $rel_links = [
     'topic.A.name.php',
     'topic.A.name.php'
@@ -41,7 +41,7 @@
                     <label for="value">Value:</label><br>
                     <input style="margin-bottom:20px;" type="text" id="value" value=""><br><br>
             
-                    <button type="button" id="set-local">Save to localStorage</button>
+                    <button class="btn" type="button" id="set-local">Save to localStorage</button>
             <!--- this piese doesnt work
                 <form>
                     <label for="get-key">Key:</label>
@@ -50,7 +50,7 @@
                     <output id="output"></output>
                 </form> 
             -->
-                    <button type="button" id="clear">Clear localStorage</button>
+                    <button class="btn" type="button" id="clear">Clear localStorage</button>
                 </form>
                 <br>
                 <hr>
